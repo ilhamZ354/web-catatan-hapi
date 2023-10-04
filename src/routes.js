@@ -1,10 +1,16 @@
-const { addHandler } = require('./handler')
+const { addNoteHandler,getAllNotesHandler } = require('./handler');
 const routes = [
   {
     method: 'POST',
     path: '/notes',
-    handler: addHandler,
+    handler: addNoteHandler,
   },
+  //MENDAPATKAN CATATAN
+  {
+    method: 'GET',
+    path: '/notes',
+    handler: getAllNotesHandler,
+ },
     
 ];
   

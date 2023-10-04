@@ -11,6 +11,12 @@ const routes = [
     path: '/notes',
     handler: getAllNotesHandler,
  },
+ //melakukan perubahan berdasarkan id
+ {
+  method: 'PUT',
+  path: '/notes/{id}',
+  handler: editNoteByIdHandler,
+  },
     
 ];
   

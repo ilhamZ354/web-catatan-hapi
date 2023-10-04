@@ -37,4 +37,12 @@ const addHandler = (request, h) => {
   return response;
 };
 
+//mendapatkan catatan
+const getAllNotesHandler = ()=>({
+  status : 'berhasil',
+  data: {
+    notes,
+  },
+});
+
 module.exports = { addHandler };
